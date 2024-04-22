@@ -61,8 +61,8 @@ WHERE Mitarbeiter.jahrg > Vorgesetzter.jahrg;
 ```
 
 ### Unterschiede:
-Lookup vs join
-Dokumentorientiert vs relational
+- Lookup vs join
+- Dokumentorientiert vs relational
 
 ## c)
 ```
