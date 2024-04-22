@@ -1,5 +1,6 @@
 # 3)
 ## a)
+```
 db.abt.aggregate([
     {
         $lookup: {
@@ -22,8 +23,10 @@ db.abt.aggregate([
         }
     }
 ])
+```
 
 ## b)
+```
 db.pers.aggregate([
     {
         $lookup: {
@@ -47,18 +50,22 @@ db.pers.aggregate([
         }
     }
 ])
+```
 
 ### in SQL:
+```
 SELECT Mitarbeiter.name AS Mitarbeiter, Vorgesetzter.name AS Vorgesetzter
 FROM pers AS Mitarbeiter
 JOIN pers AS Vorgesetzter ON Mitarbeiter.vorgesetzter = Vorgesetzter.pnr
 WHERE Mitarbeiter.jahrg > Vorgesetzter.jahrg;
+```
 
 ### Unterschiede:
 Lookup vs join
 Dokumentorientiert vs relational
 
 ## c)
+```
 db.pers.aggregate([
     {
         $group: {
@@ -90,3 +97,4 @@ db.pers.aggregate([
         $limit: 1
     }
 ])
+```
