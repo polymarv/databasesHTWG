@@ -1,0 +1,12 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {"type": "string"},
+        "dozent": {"type": "string"},
+        "semester": {"type": "string"},
+        "studiengang": {"type": "objectid"},
+        "sws": {"type": "number"},
+        "ects": {"type": "number"}
+    },
+    "required": ["name", "dozent", "semester", "studiengang", "sws", "ects"]
+}

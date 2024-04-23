@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "kuerzel": {"type": "string"},
+        "name": {"type": "string"},
+        "abschluss": {"type": "string"}
+    },
+    "required": ["kuerzel", "name", "abschluss"]
+}

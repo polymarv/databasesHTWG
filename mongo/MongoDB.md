@@ -1,3 +1,37 @@
+# 2)
+## a)
+```
+db.studiengaenge.find({ abschluss: "Bachelor" }, { kuerzel: 1, _id: 0 })
+```
+
+## b)
+```
+db.vorlesungen.find({ studiengang: ObjectId("662772c5176f1fa75bd337d7"), sws: { $lt: 5 } }, { name: 1, _id: 0 }).sort({ name: 1 })
+```
+
+## c)
+```
+db.vorlesungen.find({ sws: { $gt: "$ects" } })
+```
+
+## d)
+```
+db.vorlesungen.aggregate([
+    { $match: { studiengang: ObjectId("662772c5176f1fa75bd337d7") } },
+    { $group: { _id: "$dozent", total_sws: { $sum: "$sws" } } }
+])
+```
+
+## e)
+```
+db.vorlesungen.aggregate([
+    { $match: { studiengang: ObjectId("662772c5176f1fa75bd337d7") } },
+    { $group: { _id: "$dozent", total_sws: { $sum: "$sws" } } },
+    { $sort: { total_sws: -1 } },
+    { $limit: 1 }
+])
+```
+
 # 3)
 ## a)
 ```
