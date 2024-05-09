@@ -1,4 +1,4 @@
-# Queries for movie database in neo4js
+# Queries for movie database in neo4j
 
 a) Welches sind die drei häufigsten Directors, mit denen Tom Hanks zusammen gedreht hat?
 Geben Sie die Director-Namen und die Anzahl gemeinsamer Filme aus.
