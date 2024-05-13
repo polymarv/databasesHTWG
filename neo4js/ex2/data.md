@@ -2,15 +2,15 @@
 ## 0001 Aufenthaltsraum
 30 Plätze
 Sofa
-Nachbar: Treppe Süd
+Nachbar: Treppe Süd Unten
 Zeit zu Nachbar: 1
 
-## Treppe Süd
-Nachbar: Aufzug
+## Treppe Süd Unten
+Nachbar: Aufzug Unten, Treppe Süd Oben
 Zeit zu Nachbar: 1
 
-## Aufzug
-Nachbar: Pc Pool 0002
+## Aufzug Unten
+Nachbar: Pc Pool 0002, Aufzug Oben
 Zeit zu Nachbar: 3
 
 ## Pc Pool 0002
@@ -33,7 +33,7 @@ Nachbar: Treppe Nord
 Zeit zu Nachbar: 3
 
 ## Treppe Nord
-Nachbar: 0007 PC Pool
+Nachbar: 0007 PC Pool,
 Zeit zu Nachbar: 2
 
 ## 0007 PC-Pool
@@ -68,14 +68,14 @@ Zeit zu Nachbar: 2
 Sitzplätze 20
 Tafeln 3
 Beamer 1
-Nachbar: Treppe Süd
+Nachbar: Treppe Süd Oben
 Zeit zu Nachbar: 1
 
-## Treppe Süd
-Nachbar: Aufzug
+## Treppe Süd Oben
+Nachbar: Aufzug Oben
 Zeit zu Nachbar: 1
 
-## Aufzug
+## Aufzug Oben
 Nachbar: Hörsaal 0102
 Zeit zu Nachbar: 2
 
