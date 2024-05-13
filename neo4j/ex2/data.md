@@ -29,10 +29,10 @@ Zeit zu Nachbar: 2
 
 ## 0004 Fakultät IN
 Personen: Klaus Eiermann, Mamaduo Kane
-Nachbar: Treppe Nord
+Nachbar: Treppe Nord Unten
 Zeit zu Nachbar: 3
 
-## Treppe Nord
+## Treppe Nord Unten
 Nachbar: 0007 PC Pool,
 Zeit zu Nachbar: 2
 
@@ -109,10 +109,10 @@ Zeit zu Nachbar: 1
 
 ## 0106 Fakultät IN
 Personen: Prof. Dr. Ing. Jürgen Wäsch, Prof. Dr. Oliver Eck
-Nachbar: Treppe Nord
+Nachbar: Treppe Nord Oben
 Zeit zu Nachbar: 2
 
-## Treppe Nord
+## Treppe Nord Oben
 Nachbar: 0112 Fakultät IN Druckerraum
 Zeit zu Nachbar: 2
 
