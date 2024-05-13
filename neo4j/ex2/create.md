@@ -45,11 +45,8 @@ CREATE
   (GebäudemanagementUnten)-[:NACHBAR {zeit: 1}]->(Rechenzentrum),
   (Rechenzentrum)-[:NACHBAR {zeit: 3}]->(PCPool0008),
   (PCPool0008)-[:NACHBAR {zeit: 2}]->(Ausgang),
-  (Ausgang)-[:NACHBAR {zeit: 1}]->(Aufenthaltsraum);
-
-
+  (Ausgang)-[:NACHBAR {zeit: 1}]->(Aufenthaltsraum),
 // 1. Stock
-CREATE
   (Seminarraum:Raum {name: '0101 Seminarraum', art: 'Raum', plätze: 20}),
   (TreppeSüdOben:Raum {name: 'Treppe Süd Oben', art: 'Treppe', rollstuhlfahrer: false}),
   (AufzugOben:Raum {name: 'Aufzug Oben', art: 'Aufzug', rollstuhlfahrer: true}),
@@ -65,7 +62,7 @@ CREATE
   (PCPool0107:Raum {name: '0107 PC Pool', art: 'Raum'}),
   (GebäudemanagementOben:Raum {name: '0110 Gebäudemanagement', art: 'Raum'}),
   (Rechenzrentrum:Raum {name: '0109 Rechenzrentrum', art: 'Raum'}),
-  (PCPool0108:Raum {name: '0108 PC Pool', art: 'Raum'})
+  (PCPool0108:Raum {name: '0108 PC Pool', art: 'Raum'}),
   (Seminarraum)-[:NACHBAR {zeit: 1}]->(TreppeSüdOben),
   (TreppeSüdOben)-[:NACHBAR {zeit: 1}]->(Seminarraum),
   (TreppeSüdOben)-[:NACHBAR {zeit: 1}]->(AufzugOben),

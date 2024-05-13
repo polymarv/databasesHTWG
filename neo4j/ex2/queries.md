@@ -1,9 +1,8 @@
 # Queries in neo4j for building plan database
 a) Wie lange benötigt Herr Eck von seinem Büro zum Büro von Hr. Eiermann?
 ```
-//Example
-MATCH (source:Raum {name: '0092 Behinderten Toillette'}), (target:Raum {name: '0008 PC-Pool'})
-CALL gds.shortestPath.dijkstra.stream('graphNew', {
+MATCH (source:Raum {name: '0106 Fakultät IN'}), (target:Raum {name: '0004 Fakultät IN'})
+CALL gds.shortestPath.dijkstra.stream('graphyyy', {
     sourceNode: source,
     targetNode: target,
     relationshipWeightProperty: 'zeit'
@@ -19,6 +18,9 @@ RETURN
     nodes(path) as path
 ORDER BY costs
 ```
+![
+    
+](image.png)
 b) Welcher Weg ist der kürzeste Weg vom Eingang auf der Südseite zu einem Poolraum in
 der ersten Etage und mind. 30 Sitzplätze?
 ```
