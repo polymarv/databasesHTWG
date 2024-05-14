@@ -19,9 +19,8 @@ RETURN
     nodes(path) as path
 ORDER BY costs
 ```
-![
-    
-](image.png)
+
+![alt text](image-4.png)
 
 b) Welcher Weg ist der kürzeste Weg vom Eingang auf der Südseite zu einem Poolraum in
 der ersten Etage und mind. 30 Sitzplätze?
